@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            overflow-x: hidden;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .nav {
+            background-color: red;
+            width: 100%;
+            height: 90px;
+        }
+
+        .logo {
+            height: 80px;
+            width: 200px;
+        }
+
+        .div3 {
+            background-color: red;
+            width: 100%;
+            height: 400px;
+            background-image: url(https://fdstatic.foodfood.com/odd/images/30BbbTFoodFood-Chefs.jpg);
+            background-image: 100%;
+            background-size: 100% 100%;
+        }
+
+        #homeb {
+            background-color: white;
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        #blogb {
+            background-color: white;
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        #aboutb {
+            background-color: white;
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        #conb {
+            background-color: white;
+            font-size: 20px;
+            width: 140px;
+            font-style: italic;
+        }
+
+        #signb {
+            background-color: white;
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        .navoptions {
+            background-color: red;
+            width: 100%;
+            height: 25px;
+        }
+
+        .navoption {
+            width: 100%;
+            height: 40px;
+            background-color: white;
+            position: relative;
+        }
+
+        .common {
+            text-transform: capitalize;
+            border: none;
+            width: 160px;
+            padding-left: 20px;
+            margin-top: 7px;
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        .common font {
+            padding-left: 12px;
+            width: 240px;
+            font-size: 25px;
+            font-style: italic;
+        }
+
+        input {
+            margin-top: 5px;
+            width: 100px;
+            border: none;
+            background-color: white;
+            text-transform: capitalize;
+        }
+
+        #divip {
+            background-color: ;
+            height: 40px;
+            width: 500px;
+            position: relative;
+            left: 420px;
+            top: 150px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+
+        #divbut {
+            height: 40px;
+            width: 40px;
+            background-color: white;
+            position: relative;
+            left: 920px;
+            top: 76px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        #h55 {
+            position: relative;
+            top: 6px;
+            left: 6px;
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        .font {
+            width: 100px
+        }
+
+        .div4 {
+            background-color: brown;
+            width: 100%;
+            height: 140px;
+        }
+
+        .div41 {
+            background-color: aqua;
+            width: 25%;
+            height: 140px;
+            float: left;
+
+        }
+
+        #img41 {
+            position: relative;
+            left: 130px;
+            height: 90px;
+
+        }
+
+        #img41:hover {
+
+            transform: scale(1.2, 1.2);
+        }
+
+        #con41 {
+            font-size: 30px;
+            position: relative;
+            top: 33px;
+            left: 45px;
+            text-transform: capitalize;
+        }
+
+        .div42 {
+            width: 25%;
+            background-color: lightgreen;
+            float: left;
+            height: 140px;
+            font-size: 35px;
+        }
+
+        #img42 {
+            position: relative;
+            left: 130px;
+            height: 90px;
+        }
+
+        #img42:hover {
+
+            transform: scale(1.2, 1.2);
+        }
+
+        #con42 {
+            font-size: 30px;
+            position: relative;
+            top: 31px;
+            left: 40px;
+            text-transform: capitalize;
+        }
+
+        .div43 {
+            width: 25%;
+            background-color: orange;
+            float: left;
+            height: 140px;
+            font-size: 35px;
+        }
+
+        #img43 {
+            position: relative;
+            top: 8px;
+            left: 130px;
+            height: 80px;
+        }
+
+        #img43:hover {
+
+            transform: scale(1.2, 1.2);
+        }
+
+        #con43 {
+            font-size: 30px;
+            position: relative;
+            top: 34px;
+            left: 54px;
+            text-transform: capitalize;
+        }
+
+        .div44 {
+            width: 25%;
+            background-color: maroon;
+            float: left;
+            height: 140px;
+            font-size: 35px;
+        }
+
+        #img44 {
+            position: relative;
+            top: 8px;
+            left: 130px;
+            height: 80px;
+        }
+
+        #img44:hover {
+
+            transform: scale(1.2, 1.2);
+        }
+
+        #con44 {
+            text-transform: capitalize;
+            font-size: 30px;
+            position: relative;
+            top: 36px;
+            left: 45px;
+        }
+
+        .reciepe {
+            background-color: white;
+            width: 100%;
+            height: 150px;
+            color: black;
+            text-transform: capitalize;
+        }
+
+        .span3 {
+            color: red;
+            text-transform: capitalize;
+            position: relative;
+            top: 50px;
+            left: 140px;
+            font-size: 50px;
+        }
+
+        u {
+            color: black;
+            text-decoration: none;
+            position: relative;
+            top: 50px;
+            left: 140px;
+            font-size: 50px;
+        }
+
+        .nonfunb {
+            position: relative;
+            top: 31px;
+            left: 140px;
+            background-color: whitesmoke;
+            height: 40px;
+            width: 190px;
+        }
+
+        .recimg {
+            height: 370px;
+            width: 100%;
+            background-color: red;
+            position: relative;
+            top: 37px;
+        }
+
+        .img1 {
+            background-color: white;
+            width: 36%;
+            height: 370px;
+            float: left;
+        }
+
+        .img2 {
+            background-color: white;
+            width: 64%;
+            height: 370px;
+            float: left;
+        }
+
+        .img11 {
+            height: 300px;
+            position: relative;
+            left: 140px;
+            width: 380px;
+        }
+
+        .img12 {
+            height: 300px;
+            position: relative;
+            left: 0px;
+            width: 380px;
+            margin-left: 5px;
+        }
+
+        .lefta {
+            background-color: white;
+            color: black;
+            height: 50px;
+            width: 50px;
+            font-size: 35px;
+            position: relative;
+            top: -140px;
+            left: -240px;
+        }
+
+        .righta {
+            background-color: white;
+            color: black;
+            height: 50px;
+            width: 50px;
+            font-size: 35px;
+            position: relative;
+            top: -140px;
+            left: -380px;
+        }
+
+        .rightla {
+            background-color: white;
+            color: black;
+            height: 50px;
+            width: 50px;
+            font-size: 35px;
+            position: relative;
+            top: -140px;
+            left: -105px;
+        }
+
+        .rlefta {
+            background-color: white;
+            color: black;
+            height: 50px;
+            width: 50px;
+            font-size: 35px;
+            position: relative;
+            top: -140px;
+            left: 35px;
+        }
+
+        .imgcon1 {
+            background-color: white;
+            height: 80px;
+            width: 73%;
+            margin-top: -13px;
+            position: relative;
+            left: 140px;
+        }
+
+        .span1 {
+            font-size: 20px;
+            position: relative;
+            left: 4px;
+            top: 2px;
+            color: black;
+            font-weight: bold;
+        }
+
+        span {
+            font-size: 15px;
+            position: relative;
+            left: 3px;
+            top: 2px;
+            color: black;
+        }
+
+        .imgcon2 {
+            background-color: white;
+            height: 80px;
+            width: 40.5%;
+            margin-top: -13px;
+            position: relative;
+            left: 5px;
+        }
+
+        #ip1 {
+            background-color: maroon;
+            color: white;
+            height: 40px;
+            width: 120px;
+            font-size: 20px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            margin-top: 30px;
+            position: sticky;
+            left: 600px;
+        }
+
+        .tips {
+            background-image: url(https://www.joomla-monster.com/images/blog/best-restaurant-templates/b-5.jpg);
+            height: 300px;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: 100%;
+            background-size: 100% 100%;
+            margin-top: 10px;
+        }
+
+        h2 {
+            font-size: 44px;
+            position: relative;
+            top: 60px;
+            left: 420px;
+            color: white;
+        }
+
+        h4 {
+            font-size: 34px;
+            position: relative;
+            top: -55px;
+            left: 480px;
+            color: white;
+        }
+
+        #ip2 {
+            background-color: maroon;
+            position: relative;
+            left: 580px;
+            top: -50px;
+            color: white;
+            font-size: 20px;
+            width: 150px;
+            height: 40px;
+        }
+
+        #h1 {
+            font-size: 45px;
+            position: relative;
+            left: 490px;
+            top: 10px;
+        }
+
+        #h2 {
+            font-size: 45px;
+            color: red;
+            position: relative;
+            left: 580px;
+            top: -87px;
+        }
+
+        #h3 {
+            font-size: 45px;
+            position: relative;
+            left: 730px;
+            top: -184px;
+        }
+
+        #a01 {
+            background-color: white;
+            height: 400px;
+            width: 50%;
+            position: relative;
+            top: -200px;
+            float: left;
+        }
+
+        .abc {
+            color: black;
+            font-size: 50px;
+            position: relative;
+            left: 180px;
+        }
+
+        .h1n {
+            color: maroon;
+            font-size: 50px;
+            position: relative;
+            top: -3px;
+            left: 220px;
+        }
+
+        .h1cc {
+            font-size: 50px;
+            position: relative;
+            left: 390px;
+            top: -95px;
+        }
+
+        .h1c {
+            font-size: 50px;
+            position: relative;
+            left: 560px;
+            top: -185px;
+        }
+
+        #a2 {
+            position: relative;
+            left: 220px;
+            top: -225px;
+            font-size: 15px;
+        }
+
+        #a02 {
+            background-color: white;
+            width: 50%;
+            height: 400px;
+            float: left;
+            position: relative;
+            top: -200px;
+        }
+
+        .img4 {
+            height: 400px;
+        }
+
+        #a03 {
+            background-color: white;
+            width: 50%;
+            height: 400px;
+            float: left;
+            position: relative;
+            top: -200px;
+        }
+
+        #a3 {
+            position: relative;
+            left: 220px;
+            top: -230px;
+            font-size: 15px;
+        }
+
+        .img5 {
+            height: 400px;
+            position: relative;
+            left: 160px;
+        }
+
+        #a04 {
+            background-color: white;
+            height: 400px;
+            width: 50%;
+            position: relative;
+            top: -200px;
+
+            float: left;
+        }
+
+        #a04 {
+            background-color: white;
+            width: 50%;
+            height: 400px;
+            float: left;
+            position: relative;
+            top: -200px;
+        }
+
+        .h1chi {
+            position: relative;
+            left: 40px;
+            top: -35px;
+            color: maroon;
+            font-size: 50px;
+            font-style: italic;
+        }
+
+        .h1aa {
+            font-size: 50px;
+            position: relative;
+            left: 223px;
+            top: -126px;
+        }
+
+        #a12 {
+            position: relative;
+            top: -210px;
+            left: 40px;
+            font-size: 15px;
+            font-style: italic;
+        }
+
+        .sanid {
+
+            position: relative;
+            left: 42px;
+            top: -172px;
+            font-size: 40px;
+            font-style: italic;
+
+        }
+
+        .ab {
+            font-size: 50px;
+            position: relative;
+            left: 10px;
+        }
+
+        .chef {
+            height: 500px;
+            width: 100%;
+            background-color: white;
+            position: relative;
+            top: 620px;
+        }
+        .names{
+            font-size: 45px;
+            position: absolute;
+            left: 490px;
+            top: 10px;
+            text-transform: capitalize;
+            margin-left: -200px;
+        }
+        .cmn{
+            position:absolute;
+            left: 75px;
+            top: 1px;
+            color: red;
+        }
+        .our{
+            height: 430px;
+            width: 25%;
+            margin-left: 10px;
+            font-size: 1.6em;
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: capitalize;
+            border: 2px black solid;
+        }
+        b{
+            color: red;
+        }
+        .chefs1{
+            background-color: white;
+            position: absolute;
+            left: 160px;
+            top: 70px;
+        }
+        .chefs2{
+            background-color: white;
+            position: absolute;
+            left: 535px;
+            top: 70px;
+        }
+        .chefs3{
+            background-color: white;
+            position: absolute;
+            left: 910px;
+            top: 70px;
+        }
+        .cimg{
+            width: 100%;
+        }
+        .foot{
+            height: 500px;
+            width: 100%;
+            background-color: black;
+            position: relative;
+            top: 650px;
+        }
+        .foot img{
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            left: 11%;
+            top: 10%;
+        }
+        .foot p{
+            color: white;
+            position: absolute;
+            left: 11%;
+            top: 30%;
+            font-weight: bold;
+            font-size: 17px;
+        }
+        .foot ul{
+            color: white;
+            position: absolute;
+            left: 35%;
+            top: 10%;
+            text-transform: capitalize;
+            list-style: none;  
+            font-weight: bold;
+            font-size: 20px; 
+        }
+        .foot #ul23{
+            position: absolute;
+            left: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <img src="	https://www.foodfood.com/assets/images/logo/logo.png" alt="" class="logo">
+    </div>
+    <div class="navoption">
+        <input type="button" name="" id="homeb" value="home">
+        <select class="common">
+            <option>chefs</option>
+            <option>master sanjeev kapoor </option>
+            <option>chef harpal singh chol</option>
+            <option>chef amritha raichand </option>
+            <option>chef rakhee vaswani </option>
+            <option>chef sanjay gupta </option>
+            <option>chef anupa das</option>
+            <option>chef shilarna vaze(chinu)</option>
+            <option>chef shantanu gupte</option>
+            <option>chef rakesh sethi</option>
+            <option>chef sarana goila</option>
+            <option>chef shailendraa kekade</option>
+            <option>chef ajay chopra</option>
+            <option>chef madhu sneha</option>
+            <option>chef shipra khanna</option>
+            <option>chef shazia khan</option>
+            <option>chef vicky ratnani</option>
+        </select>
+
+        <select class="common">
+            <option>shows</option>
+            <option value="">sanjeev kapoor's kitchen</option>
+            <option value="">cook smart</option>
+            <option value="">turban tadka</option>
+            <option value="">mummy ka magic</option>
+            <option value="">tea time</option>
+            <option value="">style chef</option>
+            <option value="">health manage more</option>
+            <option value="">firangi tadka</option>
+            <option value="">food this week</option>
+            <option value="">sunny side up</option>
+            <option value="">the pooja makhila show</option>
+            <option value="">flab q</option>
+            <option value="">maa ki dal by chef hapral singh sokhi</option>
+            <option value="">hi tea</option>
+            <option value="">out of the world</option>
+            <option value="">the fit foodie</option>
+            <option value="">herbs and spice</option>
+            <option value="">healthy fridge</option>
+            <option value="">daal dhamal</option>
+            <option value="">india unlimited</option>
+            <option value="">health magazine</option>
+            <option value="">pure sin</option>
+            <option value="">k for kids</option>
+            <option value="">health challenge</option>
+        </select>
+
+        <select class="common">
+            <option value="">recipes</option>
+            <option>course</option>
+            <option>cuisine</option>
+            <option>occasaion</option>
+            <option>ingredients</option>
+            <option>meal type</option>
+            <option>diet</option>
+            <option>show</option>
+        </select>
+
+        <select class="common">
+            <option>videos</option>
+            <option value="">course</option>
+            <option value="">cuisine</option>
+            <option value="">occasaion</option>
+            <option value="">ingredients</option>
+            <option value="">meal type</option>
+            <option value="">diet</option>
+            <option value="">show</option>
+            <option value="">season</option>
+        </select>
+
+        <select class="common">
+            <option>food journal</option>
+            <option value="">articles</option>
+            <option value="">health tips</option>
+            <option value="">faq</option>
+            <option value="">fun food facts</option>
+            <option value="">food glossary</option>
+        </select>
+        <input type="button" name="" id="blogb" value="blog">
+        <input type="button" name="" id="aboutb" value="about us">
+        <input type="button" name="" id="conb" value="contact us">
+        <input type="button" name="" id="signb" value="sign in">
+
+    </div>
+
+    <div class="div3">
+        <input type="search" class="" id="divip">
+        <div id="divbut">
+            <h5 id="h55">🔍</h5>
+        </div>
+    </div>
+    <div class="div4">
+        <div class="div41"><img src="https://www.foodfood.com/assets/images/cuisine.png" alt="" id="img41"><span
+                id="con41">Cusine</span></div>
+        <div class="div42"><img src="	https://www.foodfood.com/assets/images/ingredience.png" alt="" id="img42"><span
+                id="con42">ingredients</span></div>
+        <div class="div43"><img src="	https://www.foodfood.com/assets/images/meal-&-course.png" alt="" id="img43"><span
+                id="con43">meal</span></div>
+        <div class="div44"><img src="https://www.foodfood.com/assets/images/chef.png" alt="" id="img44"><span
+                id="con44">occasior</span></div>
+    </div>
+    <div class="reciepe">
+        <span class="span3">re</span><u>cipes </u> <br><br>
+        <input type="button" value="snack recipes" class="nonfunb">
+        <input type="button" value="by sanjeev kapoor" class="nonfunb">
+        <input type="button" value="mummy ka magic" class="nonfunb">
+        <input type="button" value="healthy recipes" class="nonfunb">
+    </div>
+    <div class="recimg">
+        <div class="img1"><img src="https://fdstatic.foodfood.com/odd/images/idli-shashilik.jpg" alt=""
+                class="img11"><input type="button" value="<" class="lefta"> <input type="button" value=">"
+                class="rlefta">
+            <div class="imgcon1"><span class="span1">idli-shaslik</span>
+                <span> <br>the vegetarians will you bless you for this delicious starter</span>
+            </div>
+        </div>
+        <div class="img2"><img src="https://fdstatic.foodfood.com/odd/images/PRTET101702-02.jpg" alt=""
+                class="img12"><input type="button" value="<" class="righta"> <input type="button" value=">"
+                class="rightla">
+            <div class="imgcon2"><span class="span1">muesli cookies</span>
+                <span> <br>healthy and tasty is thee only way to describe these cookies</span>
+            </div>
+        </div>
+    </div>
+    <input type="button" value="show all" id="ip1">
+    <div class="tips">
+        <h2>Natural ingredients and tasty food</h2><br>
+        <br>
+        <h4>some trendy and useful Tricks</h4>
+        <input type="button" value="tips & trick" id="ip2">
+    </div>
+    <h3 id="h1">Our</h3>
+    <h3 id="h2">special</h3>
+    <h3 id="h3">dishes</h3>
+
+    <div id="a01">
+        <h1 class="abc">01._________</h>
+            <h1 class="h1n">almond</h1>
+            <h1 class="h1cc">crusted</h1>
+            <h1 class="h1c">chicken</h1>
+            <h6 id="a2">Include this delightful protein filled starter in your dinner menu and win the <br> hearts
+                of your loved ones. The crushed almond coating makes it crispier.</h6>
+    </div>
+    <div id="a02"><img src="https://fdstatic.foodfood.com/odd/images/Almond-Crusted-Chicken.jpg" alt="" class="img4">
+    </div>
+
+    <div id="a03"><img src="https://fdstatic.foodfood.com/odd/images/edited3.jpg" alt="" class="img5"></div>
+    <div id="a04">
+        <h1 class="ab">01._________</h>
+            <h1 class="h1chi">chicken</h1>
+            <h1 class="h1aa">and apple <br>
+                <h1 class="sanid">sandwich</h1>
+            </h1>
+        </h1>
+        <h6 id="a12">The softness of chicken mince and crunch of apple and celery <br> mingle well in these
+            delicious sandwiches</h6>
+    </div>
+    <div class="chef">
+        <span class="head names">chefs <span class="cmn names">our</span></span>
+        <div class="our chefs1"><img src="https://fdstatic.foodfood.com/odd/images/Awy4hBMasterchef-Sanjeev-Kapoor.jpg" alt=""class="cimg">masterchef sanjeev kapoor <br><b>masterchef</b></div>
+        <div class="our chefs2"><img src="https://fdstatic.foodfood.com/odd/images/TKheToChef-Harpal-Singh-Sokhi.jpg" alt=""  class="cimg">chef harpal singh sokhi <br> <b>chef</b></div>
+        <div class="our chefs3"><img src="https://fdstatic.foodfood.com/odd/images/yUac4SChef-Amrita-Raichand.jpg" alt=""     class="cimg">chef amrita raichand <br> <b>chef</b></div>
+    </div>
+
+    <div class="foot">
+        <img src="https://www.foodfood.com/assets/images/logo/logo.png" alt="">
+        <p>Welcome to www.foodfood.com ("Website"). <br>This Website is owned and operated by Turmeric <br>Vision Private Limited.</p>
+        <ul>
+            <li  style="font-size: 20px;">helpful links</li>
+            <li>home</li>
+            <li>about</li>
+            <li>blog</li>
+            <li>contact</li>
+        </ul>
+        <ul id="ul23">
+            <li  style="font-size: 20px;">helpful links</li>
+            <li>privacy policy</li>
+            <li>termas & conditinos</li>
+            <li>legal</li>
+        </ul>
+    </div>
+</body>
+
+</html>
